@@ -31,7 +31,8 @@ EOF
 
 service auditd restart
 
-cat > /var/www/html/index.html <<EOF
+# Paso 1: escribir el HTML con placeholder
+cat > /var/www/html/index.html <<'EOF'
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -49,10 +50,13 @@ cat > /var/www/html/index.html <<EOF
 <body>
   <div class="card">
     <h1>Estos servidores son elásticos</h1>
-    <p class="hostname">Servidor actual: \$(hostname -f)</p>
+    <p class="hostname">Servidor actual: HOSTNAME_PLACEHOLDER</p>
   </div>
 </body>
 </html>
 EOF
+
+# Paso 2: reemplazar el placeholder con el hostname real
+sed -i "s/HOSTNAME_PLACEHOLDER/$(hostname -f)/" /var/www/html/index.html
 
 systemctl enable httpd --now
