@@ -18,8 +18,6 @@ Solución a los enunciados de la tarea, implementando un clúster de Kubernetes 
 └── README.md
 ```
 
-> Cada directorio sigue la estructura `preguntaN/seccion1/` y `preguntaN/seccion2/` según lo solicitado.
-
 ---
 
 ## Pipelines
