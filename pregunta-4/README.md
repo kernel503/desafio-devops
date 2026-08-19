@@ -51,7 +51,7 @@ aws autoscaling describe-auto-scaling-groups \
 
 ## Cloudflare
 
-> ⚠️ Único paso configurado manualmente.
+> ⚠️ aso configurado manualmente.
 
 El tráfico al ALB está restringido únicamente a las IPs de Cloudflare. El dominio `pregunta4.prosaludsocial.site` apunta al ALB mediante un registro CNAME con proxy activado ☁️.
 
