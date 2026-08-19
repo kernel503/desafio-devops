@@ -1,0 +1,8 @@
+# Terraform
+**/.terraform/
+**/terraform.tfstate
+**/terraform.tfstate.backup
+**/.terraform.lock.hcl
+
+# Llaves SSH
+**/credencial/test-k8s

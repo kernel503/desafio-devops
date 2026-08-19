@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-index-config
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Hola Mundo</title>
+      </head>
+      <body>
+        <h1>Hola Mundo Juan Carlos Orellana Orellana</h1>
+      </body>
+    </html>
